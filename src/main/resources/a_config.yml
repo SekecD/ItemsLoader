@@ -1,0 +1,9 @@
+A_items:
+  item1:
+    id: DIAMOND_SWORD
+    slot: 0
+    name: "&aItem 1"
+    lore:
+      - "&7This is item 1"
+    command: "some_command"
+  # Добавьте другие предметы для конфигурации типа A

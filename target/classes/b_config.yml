@@ -1,0 +1,9 @@
+B_items:
+  item1:
+    id: IRON_SWORD
+    slot: 1
+    name: "&bItem 1"
+    lore:
+      - "&7This is item 1 for type B"
+    command: "another_command"
+  # Добавьте другие предметы для конфигурации типа B

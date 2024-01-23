@@ -1,0 +1,7 @@
+name: ItemsLoader
+version: '${project.version}'
+main: ru.mastaa.qub.ItemsLoader
+api-version: '1.16'
+commands:
+  itemsapi:
+
