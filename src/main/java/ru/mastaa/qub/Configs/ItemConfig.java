@@ -2,6 +2,7 @@ package ru.mastaa.qub.Configs;
 
 import org.bukkit.Material;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class ItemConfig {
