@@ -1,5 +1,7 @@
 package ru.mastaa.qub.ServerBuilder;
 
+import static java.lang.Integer.MIN_VALUE;
+
 public class ServerSorter {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
@@ -23,10 +25,10 @@ public class ServerSorter {
             int partNum1= (left + right) / 2;
             int partNum2 = halfLength - partNum1;
 
-            int maxLeftNums1 = (partNum1 == 0) ? Integer.MIN_VALUE : nums1[partNum1 - 1];
-            int minRightNums1 = (partNum1 == m) ? Integer.MIN_VALUE : nums1[partNum1];
-            int maxLeftNums2 = (partNum2 == 0) ? Integer.MIN_VALUE : nums2[partNum2 - 1];
-            int minRightNums2 = (partNum2 == m) ? Integer.MIN_VALUE : nums2[partNum2];
+            int maxLeftNums1 = (partNum1 == 0) ? MIN_VALUE : nums1[partNum1 - 1];
+            int minRightNums1 = (partNum1 == m) ? MIN_VALUE : nums1[partNum1];
+            int maxLeftNums2 = (partNum2 == 0) ? MIN_VALUE : nums2[partNum2 - 1];
+            int minRightNums2 = (partNum2 == m) ? MIN_VALUE : nums2[partNum2];
 
             if (maxLeftNums1 <= minRightNums2 && maxLeftNums2 <= minRightNums1) {
                 if ((m + n) % 2 == 0) {
